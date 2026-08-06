@@ -40,12 +40,12 @@ h1 {
 
 .tagline {
     font-size: 35px;
-    color: #d4af37;
+    color: white;
     margin-bottom: 40px;
     letter-spacing: 2px;
 }
 
-.buttons {
+.button-group {
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -57,9 +57,9 @@ button {
     padding: 15px;
 
     background: transparent;
-    color: #d4af37;
+    color: white;
 
-    border: 2px solid #d4af37;
+    border: 2px solid white;
     border-radius: 5px;
 
     font-size: 18;
@@ -68,13 +68,14 @@ button {
 
     cursor: pointer;
     transition: 0.3s;
+    
 }
 
 button:hover {
-    background: #d4af37;
+    background: white;
     color: black;
 }
-
+/* cinematic landing page polish */
 body::before {
     content: "";
     position: fixed;
@@ -89,7 +90,7 @@ body::before {
 
 .case-file {
     margin: 30px auto;
-    color: #d6d6d6;
+    color: white;
     font-family: "Courier New", monospace;
     letter-spacing: 2px;
     font-weight: 700;
@@ -98,7 +99,7 @@ body::before {
 .case-file h2 {
     font-size: 21px;
     margin-bottom: 5px;
-    color: #d4af37;
+    color: white;
     font-weight: 700;
 }
 
@@ -115,7 +116,7 @@ body::before {
 }
 
 .case-file span {
-    color: #d4af37;
+    color: white;
     font-weight: 700;
     font-size: 16px;
     letter-spacing: 3px;
