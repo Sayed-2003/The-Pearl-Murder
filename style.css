@@ -1,0 +1,78 @@
+/* adding styling for the whole page and making it in one box */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* main body styling
+to help in diming the background image we use linear-gradient() function to act as dark
+overlay scrim
+*/
+body{
+    min-height: 100vh;
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.7),
+        rgba(0, 0, 0, 0.7) 
+    ), url(./Assets/images/detecctive-office.jpg);
+
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+    font-family: "Georgia",serif;
+}
+
+/* main landing page container */
+.conatiner{
+    text-align: center;
+    padding: 40px;
+}
+
+h1{
+    font-size: 64px ;
+    letter-spacing: 15px;
+    margin-bottom: 20px;
+}
+
+.tagline{
+    font-size: 21px ;
+    color: #d4af37;
+    margin-bottom: 40px;
+    letter-spacing: 2px;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+button{
+    width: 260px;
+    padding: 15px;
+
+    background: transparent;
+    color: #d4af37;
+
+    border: 2px solid #d4af37;
+    border-radius: 5px;
+
+    font-size: 18;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover{
+    background: #d4af37;
+    color: black;
+}
