@@ -1,5 +1,5 @@
 /* adding styling for the whole page and making it in one box */
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -9,12 +9,10 @@
 to help in diming the background image we use linear-gradient() function to act as dark
 overlay scrim
 */
-body{
+body {
     min-height: 100vh;
-    background-image: linear-gradient(
-        rgba(0, 0, 0, 0.7),
-        rgba(0, 0, 0, 0.7) 
-    ), url(./Assets/images/detecctive-office.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),
+            rgba(0, 0, 0, 0.7)), url(./Assets/images/detecctive-office.jpg);
 
     background-size: cover;
     background-position: center;
@@ -25,36 +23,36 @@ body{
     align-items: center;
 
     color: white;
-    font-family: "Georgia",serif;
+    font-family: "Georgia", serif;
 }
 
 /* main landing page container */
-.conatiner{
+.conatiner {
     text-align: center;
     padding: 40px;
 }
 
-h1{
-    font-size: 64px ;
+h1 {
+    font-size: 75px;
     letter-spacing: 15px;
     margin-bottom: 20px;
 }
 
-.tagline{
-    font-size: 21px ;
+.tagline {
+    font-size: 35px;
     color: #d4af37;
     margin-bottom: 40px;
     letter-spacing: 2px;
 }
 
-.buttons{
+.buttons {
     display: flex;
     flex-direction: column;
     gap: 20px;
     align-items: center;
 }
 
-button{
+button {
     width: 260px;
     padding: 15px;
 
@@ -72,7 +70,53 @@ button{
     transition: 0.3s;
 }
 
-button:hover{
+button:hover {
     background: #d4af37;
     color: black;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+
+    background: radial-gradient(circle,
+            transparent 30%,
+            rgba(0, 0, 0, 0.9) 100%);
+
+    pointer-events: none;
+}
+
+.case-file {
+    margin: 30px auto;
+    color: #d6d6d6;
+    font-family: "Courier New", monospace;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+
+.case-file h2 {
+    font-size: 21px;
+    margin-bottom: 5px;
+    color: #d4af37;
+    font-weight: 700;
+}
+
+.case-file h3 {
+    font-size: 18px;
+    margin-bottom: 25px;
+    color: white;
+    font-weight: 700;
+}
+
+.case-file p {
+    margin-bottom: 15px;
+    font-size: 15px;
+}
+
+.case-file span {
+    color: #d4af37;
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 3px;
 }
