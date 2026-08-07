@@ -118,7 +118,7 @@ body::before {
 }
 
 #briefing-page{
-    display: flex;
+    display: none;
     min-height: 100vh;
     width: 100%;
     position: relative;
@@ -171,4 +171,17 @@ body::before {
     margin: 0 auto 20px;
     font-size: 18;
     color: white;
+}
+
+#back-btn{
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    width: 60px;
+    padding: 10px;
+    font-size: 25px;
+}
+
+#begin-investigation-btn{
+    margin-top: 20px;
 }
