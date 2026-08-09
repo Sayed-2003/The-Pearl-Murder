@@ -12,22 +12,19 @@ overlay scrim
 body {
     min-height: 100vh;
     background-image: linear-gradient(rgba(0, 0, 0, 0.7),
-            rgba(0, 0, 0, 0.7)), url(./Assets/images/detecctive-office.jpg);
+            rgba(0, 0, 0, 0.7)), url(../Assets/images/detecctive-office.jpg);
 
     background-size: cover;
     background-position: center;
-    align-items: center;
-
     display: flex;
     justify-content: center;
     align-items: center;
-
     color: white;
     font-family: "Georgia", serif;
 }
 
 /* main landing page container */
-.conatiner {
+#landing-page {
     text-align: center;
     padding: 40px;
 }
@@ -59,7 +56,7 @@ button {
     color: white;
     border: 2px solid white;
     border-radius: 5px;
-    font-size: 18;
+    font-size: 18px;
     letter-spacing: 3px;
     text-transform: uppercase;
     cursor: pointer;
@@ -133,7 +130,7 @@ body::before {
     width: min(700px, 90%);
     padding: 40px;
     background: rgba(0,0, 0, 0.75);
-    border: 1px solid rgb(212, 175, 55,0.5);
+    border: 1px solid rgba(212, 175, 55,0.5);
     border-radius: 8px;
     position: relative;
 }
@@ -169,7 +166,7 @@ body::before {
 .briefing-text{
     max-width: 600px;
     margin: 0 auto 20px;
-    font-size: 18;
+    font-size: 18px;
     color: white;
 }
 
