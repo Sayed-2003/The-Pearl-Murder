@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Modern+Antiqua&display=swap');
+
+
 /* adding styling for the whole page and making it in one box */
 * {
     margin: 0;
@@ -20,7 +23,7 @@ body {
     justify-content: center;
     align-items: center;
     color: white;
-    font-family: "Georgia", serif;
+    font-family: "Modern Antiqua", serif;
 }
 
 /* main landing page container */
@@ -58,7 +61,6 @@ button {
     border-radius: 5px;
     font-size: 18px;
     letter-spacing: 3px;
-    text-transform: uppercase;
     cursor: pointer;
     transition: 0.3s;
     
@@ -68,22 +70,11 @@ button:hover {
     background: white;
     color: black;
 }
-/* cinematic landing page polish */
-body::before {
-    content: "";
-    position: fixed;
-    inset: 0;
-    background: radial-gradient(circle,
-            transparent 30%,
-            rgba(0, 0, 0, 0.9) 100%);
-
-    pointer-events: none;
-}
 
 .case-file {
     margin: 30px auto;
     color: white;
-    font-family: "Courier New", monospace;
+     font-family: "Modern Antiqua", serif;
     letter-spacing: 2px;
     font-weight: 700;
 }
@@ -144,7 +135,7 @@ body::before {
 .briefing-case-file{
     margin-bottom: 30px;
     padding: 20px;
-    font-family: 'Courier New', monospace;
+    font-family: "Modern Antiqua", serif;
     border-top: 1px solid white;
     border-bottom: 1px solid white;
 }
@@ -183,7 +174,7 @@ body::before {
 #begin-investigation-btn{
     margin-top: 20px;
 }
-#scene1-page {
+#scene1-page, #scene2-page {
     display: none;
     min-height: 100vh;
     width: 100%;
@@ -200,7 +191,7 @@ body::before {
     margin: 0 auto;
 }
 
-#scene1-image {
+#scene1-image, #scene2-image {
     width: 100%;
     max-width: 700px;
 
@@ -216,13 +207,12 @@ body::before {
 
 .action-buttons {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     gap: 15px;
-
     margin: 30px 0;
     align-items: center;
+    justify-content: center;
 }
-
 
 .observation-box {
     max-width: 700px;
@@ -241,4 +231,9 @@ body::before {
 
 .observation-box p {
     line-height: 1.7;
+}
+
+#scene2-text{
+    font-size: 35px;
+ font-family: "Modern Antiqua", serif;
 }

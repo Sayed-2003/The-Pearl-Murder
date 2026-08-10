@@ -13,29 +13,18 @@
     <section id="landing-page">
         <h1>THE PEARL MURDER</h1>
 
-        <p class="tagline">
-            Investigate. Collect Clues. Reveal the Truth.
-        </p>
+        <p class="tagline">Investigate. Collect Clues. Reveal the Truth.</p>
 
         <div class="case-file">
             <h2>CASE #001</h2>
             <h3>PEARL HOUSE</h3>
 
             <div class="case-details">
-                <p>
-                    <span>STATUS:</span><br>
-                    ACTIVE
-                </p>
+                <p> <span>STATUS:</span> <br>ACTIVE</p>
 
-                <p>
-                    <span>LOCATION:</span><br>
-                    PEARL HOUSE
-                </p>
+                <p> <span>LOCATION:</span><br>PEARL HOUSE</p>
 
-                <p>
-                    <span>OBJECTIVE:</span><br>
-                    Find the Murderer
-                </p>
+                <p> <span>OBJECTIVE:</span><br>Find the Murderer</p>
             </div>
         </div>
 
@@ -56,10 +45,8 @@
                 <h2>CASE #001</h2>
                 <h3>PEARL HOUSE</h3>
 
-                <p>
-                    <span>STATUS:</span> <br>
-                    ACTIVE
-                </p>
+                <p><span>STATUS:</span><br>ACTIVE</p>
+
             </div>
 
             <p class="briefing-text">
@@ -88,11 +75,13 @@
 
             <img src="./Assets/images/Hassan-Ali-office.jpg" alt="HASSAN'S OFFICE" id="scene1-image">
 
-            <button id="office-btn">Examine the Office </button>
+            <div class="action-buttons">
 
-            <button id="desk-btn">Check Hassan's Desk</button>
+                <button id="office-btn">Examine the Office</button>
 
-            <button id="continue-scene1-btn">Continue to Main Hall</button>
+                <button id="desk-btn">Check Hassan's Desk</button>
+
+            </div>
 
             <div class="observation-box">
 
@@ -102,7 +91,36 @@
 
             </div>
 
-            <button id="continue-scene1-btn">Continue</button>
+            <button id="continue-to-hall">Continue to Main Hall</button>
+        </div>
+    </section>
+
+
+    <section id="scene2-page">
+        <div class="scene-container">
+
+            <h1>Main Hall</h1>
+
+            <img src="./Assets/images/main-hall.jpg" alt="scene2-page" id="scene2-image">
+
+            <p id="scene2-text">You enter the main hall of Pearl House. <br>
+                Fatima, the housekeeper, appears nervous. <br>
+                She agrees to answer your questions.
+            </p>
+
+            <div class="action-buttons">
+                <button>Ask About Hasan</button>
+                <button>Ask About Mohammed</button>
+            </div>
+            <div class="observation-box">
+
+                <h2>Observation</h2>
+
+                <p id="scene2-observation">Select an action to investigate the room.</p>
+
+            </div>
+
+            <button id="continue-mohamed-room">Continue to Mohammed's Room</button>
 
         </div>
     </section>

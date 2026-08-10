@@ -21,6 +21,9 @@ const firstScene = document.querySelector('#scene1-page')
 const officeBtn = document.querySelector('#office-btn')
 const deskBtn = document.querySelector('#desk-btn')
 const ObserveText = document.querySelector('#scene1-observation')
+const continueToScene2Btn =document.querySelector('#continue-to-hall')
+
+const seconedScene = document.querySelector('#scene2-page')
 
 // testing the cache 
 console.log(landingPageEl)
@@ -53,6 +56,12 @@ function examineOffice(){
 function examineDesk(){
     ObserveText.textContent =  "You discover an unfinished letter mentioning a serious family dispute."
 }
+
+function showScene2(){
+    firstScene.style.display = 'none'
+    seconedScene.style.display = 'flex'
+}
+
 /*----------------------------- Event Listeners -----------------------------*/
 startBtnEl.addEventListener('click',showBriefingPage)
 
@@ -64,3 +73,4 @@ officeBtn.addEventListener('click',examineOffice)
 
 deskBtn.addEventListener('click', examineDesk)
 
+continueToScene2Btn.addEventListener('click', showScene2)
