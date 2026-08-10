@@ -223,22 +223,22 @@ body::before {
     align-items: center;
 }
 
-.clue-panel {
+
+.observation-box {
+    max-width: 700px;
     margin: 30px auto;
     padding: 20px;
 
-    max-width: 400px;
-
-    border: 1px solid rgba(255,255,255,0.3);
+    background: rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 8px;
-
-    background: rgba(0,0,0,0.5);
 }
 
-.clue-panel h2 {
+.observation-box h2 {
     margin-bottom: 15px;
+    letter-spacing: 3px;
 }
 
-.clue-panel p {
-    margin-bottom: 10px;
+.observation-box p {
+    line-height: 1.7;
 }
