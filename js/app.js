@@ -27,7 +27,7 @@ function showBriefingPage(){
 
 function showLandingPage(){
     briefingPageEl.style.display = 'none'
-    landingPageEl.style.display = 'flex'
+    landingPageEl.style.display = ''
 }
 
 /*----------------------------- Event Listeners -----------------------------*/
