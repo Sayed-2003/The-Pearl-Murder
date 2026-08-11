@@ -235,7 +235,7 @@ button:hover {
     line-height: 1.7;
 }
 
-#scene2-text,#scene1-text{
+#scene2-text,#scene1-text,#scene3-text{
     font-size: 20px;
  font-family: "Modern Antiqua", serif;
 }

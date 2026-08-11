@@ -31,7 +31,10 @@ const askMohamedEl = document.querySelector('#askMohammed')
 const askYosufEl = document.querySelector('#askYosuf')
 
 const continueToScene3Btn = document.querySelector('#continue-mohamed-room')
-const thirdscene =document.querySelector('#scene3-page')
+const thirdscene = document.querySelector('#scene3-page')
+const ObserveText3 = document.querySelector('#scene3-observation')
+const financialRecordsEl = document.querySelector('#financial-Records')
+const hassanNotesEl = document.querySelector('#hassan-notes')
 
 
 
@@ -97,17 +100,27 @@ function showScene3(){
     thirdscene.style.display = 'flex'
 }
 
+function financialRecords(){
+    ObserveText3.textContent = "You discover that Hassan and Yousef recently lost a large amount of money in a failed business deal."
+}
+
+function hassanNotes(){
+    ObserveText3.textContent = "Hassan wrote that he planned to end his partnership with Yousef. The note makes Yousef appear to have a strong motive."
+}
+
 /*----------------------------- Event Listeners -----------------------------*/
 startBtnEl.addEventListener('click',showBriefingPage)
 
 backBtnEl.addEventListener('click',showLandingPage)
 
+// scene1
 beginInvestigationBtn.addEventListener('click',showScene1)
 
 officeBtn.addEventListener('click',examineOffice)
 
 deskBtn.addEventListener('click', examineDesk)
 
+// scene 2
 continueToScene2Btn.addEventListener('click', showScene2)
 
 askHasanEl.addEventListener('click',askHasan)
@@ -116,4 +129,7 @@ askMohamedEl.addEventListener('click',askMohammed)
 
 askYosufEl.addEventListener('click' , askYosuf)
 
+// scene 3
 continueToScene3Btn.addEventListener('click', showScene3)
+financialRecordsEl.addEventListener('click',financialRecords)
+hassanNotesEl.addEventListener('click',hassanNotes)
