@@ -32,6 +32,9 @@
             <button id="start-btn">Start Investigation</button>
             <button id="howTo-btn">How to Play</button>
         </div>
+
+        <p id="how-to-play-text"></p>
+
     </section>
 
     <section id="briefing-page">
@@ -75,6 +78,13 @@
 
             <img src="./Assets/images/Hassan-Ali-office.jpg" alt="HASSAN'S OFFICE" id="scene1-image">
 
+            <p  id="scene1-text">
+                You enter Hassan Ali's office. <br>
+                The room is unusually quiet. Hassan Ali lies dead beside his desk. <br>
+                Papers are scattered across the floor, and the room appears disturbed. <br>
+                Something happened here before his death.
+            </p>
+
             <div class="action-buttons">
 
                 <button class="btn" id="office-btn">Examine the Office</button>
@@ -104,13 +114,15 @@
             <img src="./Assets/images/main-hall.jpg" alt="scene2-page" id="scene2-image">
 
             <p id="scene2-text">You enter the main hall of Pearl House. <br>
-                Fatima, the housekeeper, appears nervous. <br>
-                She agrees to answer your questions.
+                Fatima, the longtime housekeeper, is waiting nearby.  <br>
+                 She looks nervous but agrees to answer your questions.  <br>
+                She may know what happened before Hassan's death.
             </p>
 
             <div class="action-buttons">
                 <button class="btn" id="askHasan">Ask About Hasan</button>
                 <button class="btn" id="askMohammed">Ask About Mohammed</button>
+                <button class="btn" id="askYosuf">Ask About Yosuf</button>
             </div>
             <div class="observation-box">
 
@@ -120,7 +132,39 @@
 
             </div>
 
-            <button id="continue-mohamed-room">Continue to Mohammed's Room</button>
+            <button id="continue-mohamed-room">Continue Investigate</button>
+
+        </div>
+    </section>
+
+    <section id="scene3-page">
+        <div class="scene-container">
+
+            <h1>Business Study</h1>
+
+            <img src="./Assets/images/business-study.jpg" alt="business-study" id="scene3-image">
+
+            <p id="scene3-text">
+                 You enter Hassan's private business study. <br>
+                    Documents covering his pearl business are spread across a large desk. <br>
+                     Several papers mention his business partner, Yousef Al-Mahmood. <br>
+
+            </p>
+           
+
+            <div class="action-buttons">
+                <button class="btn" id="financial-Records">Read Financial Records</button>
+                <button class="btn" id="hassan-notes">Read Hassan Notes</button>
+            </div>
+            <div class="observation-box">
+
+                <h2>Observation</h2>
+
+                <p id="scene3-observation">Select an action to investigate the room.</p>
+
+            </div>
+
+            <button id="mohamedRoom">Continue to Mohammed's Room</button>
 
         </div>
     </section>

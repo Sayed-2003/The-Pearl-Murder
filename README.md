@@ -11,6 +11,7 @@ The Pearl Murder is a browser-based "Choose Your Own Adventure" detective game b
 5. As a player, I want to restart the game after finishing so that I can explore different choices and endings.
 
 ## Screenshots
-![Landing Page](image.png)
-![Hassan office](image-1.png)
-![Main-Hall](image-2.png)
+![Landing Page](../readme-images/The-Pearl-Murder.png)
+![Hassan office](../readme-images/hassan-office.png)
+![Main-Hall](../readme-images/main-hall.png)
+![Busiess study](../readme-images/Business-study.png)

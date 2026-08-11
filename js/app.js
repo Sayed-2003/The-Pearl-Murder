@@ -28,6 +28,11 @@ const seconedScene = document.querySelector('#scene2-page')
 const ObserveText2= document.querySelector('#scene2-observation')
 const askHasanEl = document.querySelector('#askHasan')
 const askMohamedEl = document.querySelector('#askMohammed')
+const askYosufEl = document.querySelector('#askYosuf')
+
+const continueToScene3Btn = document.querySelector('#continue-mohamed-room')
+const thirdscene =document.querySelector('#scene3-page')
+
 
 
 // testing the cache 
@@ -38,6 +43,9 @@ console.log(startBtnEl)
 
 console.log(beginInvestigationBtn)
 console.log(firstScene)
+
+console.log(continueToScene3Btn)
+console.log(thirdscene)
 /*-------------------------------- Functions --------------------------------*/
 function showBriefingPage(){
     landingPageEl.style.display = 'none'
@@ -50,30 +58,45 @@ function showLandingPage(){
 }
 
 function showScene1(){
+    console.log('in scene 1')
     briefingPageEl.style.display = 'none'
     firstScene.style.display = 'flex'
 }
 
 function examineOffice(){
-    ObserveText.textContent = "The office shows signs of a struggle. Papers are scattered across the floor."
+    ObserveText.textContent = " The office shows signs of a struggle. Several papers have been knocked onto the floor, and a decorative letter opener lies nearby"
+
 }
 
 function examineDesk(){
-    ObserveText.textContent =  "You discover an unfinished letter mentioning a serious family dispute."
+    ObserveText.textContent =" You discover an unfinished letter. Hassan wrote about serious disagreements involving his family and business"
 }
 
 function showScene2(){
+    console.log('in scene 2')
     firstScene.style.display = 'none'
     seconedScene.style.display = 'flex'
 }
 
 function askHasan(){
-    ObserveText2.textContent = "Hassan was respected by many people, but recently he seemed worried."
+    ObserveText2.textContent = "Hassan had been worried lately. He was having problems with both his family and his business."
 }
 
 function askMohammed(){
-    ObserveText2.textContent = "I heard Hassan and Mohammed arguing the night before the murder."
+    ObserveText2.textContent = "I heard Hassan arguing with Mohammed the night before he died. It sounded serious."
 }
+
+function askYosuf(){
+    ObserveText2.textContent  = "Hassan and Yousef had been arguing about money for weeks. Hassan didn't trust him like he used to."
+}
+
+function showScene3(){
+    console.log('in scene 3')
+
+    seconedScene.style.display = 'none'
+    thirdscene.style.display = 'flex'
+}
+
 /*----------------------------- Event Listeners -----------------------------*/
 startBtnEl.addEventListener('click',showBriefingPage)
 
@@ -90,3 +113,7 @@ continueToScene2Btn.addEventListener('click', showScene2)
 askHasanEl.addEventListener('click',askHasan)
 
 askMohamedEl.addEventListener('click',askMohammed)
+
+askYosufEl.addEventListener('click' , askYosuf)
+
+continueToScene3Btn.addEventListener('click', showScene3)

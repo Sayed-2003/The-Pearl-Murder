@@ -121,7 +121,7 @@ button:hover {
     width: min(700px, 90%);
     padding: 40px;
     background: rgba(0,0, 0, 0.75);
-    border: 1px solid rgba(212, 175, 55,0.5);
+    border: 1px solid white;
     border-radius: 8px;
     position: relative;
 }
@@ -174,7 +174,7 @@ button:hover {
 #begin-investigation-btn{
     margin-top: 20px;
 }
-#scene1-page, #scene2-page {
+#scene1-page, #scene2-page , #scene3-page{
     display: none;
     min-height: 100vh;
     width: 100%;
@@ -183,7 +183,7 @@ button:hover {
     align-items: center;
     text-align: center;
 
-    padding: 40px 20px;
+    padding: 20px;
 }
 
 .scene-container {
@@ -191,9 +191,11 @@ button:hover {
     margin: 0 auto;
 }
 
-#scene1-image, #scene2-image {
+#scene1-image, #scene2-image,#scene3-image {
     width: 100%;
     max-width: 700px;
+    max-height: 40vh;
+    object-fit: cover;
     border-radius: 8px;
     margin: 25px 0;
 }
@@ -207,6 +209,7 @@ button:hover {
 .action-buttons {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     gap: 15px;
     margin: 30px 0;
     align-items: center;
@@ -232,8 +235,8 @@ button:hover {
     line-height: 1.7;
 }
 
-#scene2-text{
-    font-size: 35px;
+#scene2-text,#scene1-text{
+    font-size: 20px;
  font-family: "Modern Antiqua", serif;
 }
 
