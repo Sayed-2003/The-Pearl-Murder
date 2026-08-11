@@ -14,29 +14,34 @@ const briefingPageEl = document.querySelector('#briefing-page')
 const startBtnEl = document.querySelector('#start-btn')
 const backBtnEl = document.querySelector('#back-btn')
 
+// scene 1
 const beginInvestigationBtn = document.querySelector('#begin-investigation-btn')
 const firstScene = document.querySelector('#scene1-page')
-
-
 const officeBtn = document.querySelector('#office-btn')
 const deskBtn = document.querySelector('#desk-btn')
 const ObserveText = document.querySelector('#scene1-observation')
+
+// scene 2
 const continueToScene2Btn =document.querySelector('#continue-to-hall')
-
-
 const seconedScene = document.querySelector('#scene2-page')
 const ObserveText2= document.querySelector('#scene2-observation')
 const askHasanEl = document.querySelector('#askHasan')
 const askMohamedEl = document.querySelector('#askMohammed')
 const askYosufEl = document.querySelector('#askYosuf')
 
+// scene 3
 const continueToScene3Btn = document.querySelector('#continue-mohamed-room')
 const thirdscene = document.querySelector('#scene3-page')
 const ObserveText3 = document.querySelector('#scene3-observation')
 const financialRecordsEl = document.querySelector('#financial-Records')
 const hassanNotesEl = document.querySelector('#hassan-notes')
 
-
+// scene 4
+const continueToScene4Btn = document.querySelector('#mohamedRoom')
+const fourthscene = document.querySelector('#scene4-page')
+const ObserveText4 = document.querySelector('#scene4-observation')
+const searchRoomEl = document.querySelector('#srchRoom')
+const inspectDeskEl = document.querySelector('#InspDesk')
 
 // testing the cache 
 console.log(landingPageEl)
@@ -60,6 +65,7 @@ function showLandingPage(){
     landingPageEl.style.display = ''
 }
 
+// scene 1
 function showScene1(){
     console.log('in scene 1')
     briefingPageEl.style.display = 'none'
@@ -75,6 +81,7 @@ function examineDesk(){
     ObserveText.textContent =" You discover an unfinished letter. Hassan wrote about serious disagreements involving his family and business"
 }
 
+// scene 2
 function showScene2(){
     console.log('in scene 2')
     firstScene.style.display = 'none'
@@ -93,6 +100,7 @@ function askYosuf(){
     ObserveText2.textContent  = "Hassan and Yousef had been arguing about money for weeks. Hassan didn't trust him like he used to."
 }
 
+// scene 3
 function showScene3(){
     console.log('in scene 3')
 
@@ -108,6 +116,20 @@ function hassanNotes(){
     ObserveText3.textContent = "Hassan wrote that he planned to end his partnership with Yousef. The note makes Yousef appear to have a strong motive."
 }
 
+// scene 4
+
+function showScene4(){
+    thirdscene.style.display = 'none'
+    fourthscene.style.display = 'flex'
+}
+
+function searchRoom(){
+    ObserveText4.textContent = "You discover a letter showing that Hassan planned to greatly reduce Mohammed's inheritance."
+}
+
+function inspectDesk(){
+    ObserveText4.textContent = "You find a note written by Mohammed after an argument with his father. His anger toward Hassan is clear."
+}
 /*----------------------------- Event Listeners -----------------------------*/
 startBtnEl.addEventListener('click',showBriefingPage)
 
@@ -133,3 +155,8 @@ askYosufEl.addEventListener('click' , askYosuf)
 continueToScene3Btn.addEventListener('click', showScene3)
 financialRecordsEl.addEventListener('click',financialRecords)
 hassanNotesEl.addEventListener('click',hassanNotes)
+
+// scene 4
+continueToScene4Btn.addEventListener('click',showScene4)
+searchRoomEl.addEventListener('click',searchRoom)
+inspectDeskEl.addEventListener('click',inspectDesk)
