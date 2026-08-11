@@ -23,7 +23,12 @@ const deskBtn = document.querySelector('#desk-btn')
 const ObserveText = document.querySelector('#scene1-observation')
 const continueToScene2Btn =document.querySelector('#continue-to-hall')
 
+
 const seconedScene = document.querySelector('#scene2-page')
+const ObserveText2= document.querySelector('#scene2-observation')
+const askHasanEl = document.querySelector('#askHasan')
+const askMohamedEl = document.querySelector('#askMohammed')
+
 
 // testing the cache 
 console.log(landingPageEl)
@@ -62,6 +67,13 @@ function showScene2(){
     seconedScene.style.display = 'flex'
 }
 
+function askHasan(){
+    ObserveText2.textContent = "Hassan was respected by many people, but recently he seemed worried."
+}
+
+function askMohammed(){
+    ObserveText2.textContent = "I heard Hassan and Mohammed arguing the night before the murder."
+}
 /*----------------------------- Event Listeners -----------------------------*/
 startBtnEl.addEventListener('click',showBriefingPage)
 
@@ -74,3 +86,7 @@ officeBtn.addEventListener('click',examineOffice)
 deskBtn.addEventListener('click', examineDesk)
 
 continueToScene2Btn.addEventListener('click', showScene2)
+
+askHasanEl.addEventListener('click',askHasan)
+
+askMohamedEl.addEventListener('click',askMohammed)

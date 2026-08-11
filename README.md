@@ -12,3 +12,5 @@ The Pearl Murder is a browser-based "Choose Your Own Adventure" detective game b
 
 ## Screenshots
 ![Landing Page](image.png)
+![Hassan office](image-1.png)
+![Main-Hall](image-2.png)

@@ -194,7 +194,6 @@ button:hover {
 #scene1-image, #scene2-image {
     width: 100%;
     max-width: 700px;
-
     border-radius: 8px;
     margin: 25px 0;
 }
@@ -236,4 +235,9 @@ button:hover {
 #scene2-text{
     font-size: 35px;
  font-family: "Modern Antiqua", serif;
+}
+
+
+.btn{
+    height:100px
 }
