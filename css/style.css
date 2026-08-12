@@ -174,7 +174,7 @@ button:hover {
 #begin-investigation-btn{
     margin-top: 20px;
 }
-#scene1-page, #scene2-page , #scene3-page, #scene4-page, #scene5-page{
+#scene1-page, #scene2-page , #scene3-page, #scene4-page, #scene5-page,#accusation{
     display: none;
     min-height: 100vh;
     width: 100%;
@@ -192,7 +192,7 @@ button:hover {
 }
 
 #scene1-image, #scene2-image,#scene3-image,#scene4-image,
-#scene5-image {
+#scene5-image,#falseAccusationImage {
     width: 100%;
     max-width: 700px;
     max-height: 40vh;
@@ -250,3 +250,17 @@ button:hover {
     align-items: center;
     margin-left: 200px;
 }
+
+#backToHome{
+    border: 1px solid white;
+}
+
+#accusation-box{
+    max-width: 700px;
+    margin: 30px auto;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    border: 2px dashed rgba(255, 255, 255, 0.3);
+    border-radius: 8px;
+}
+

@@ -6,7 +6,8 @@ console.log("The Pearl Murder");
 
 /*---------------------------- Variables (state) ----------------------------*/
 
-
+let message = null
+let image = null
 
 /*------------------------ Cached Element References ------------------------*/
 const landingPageEl = document.querySelector('#landing-page')
@@ -46,10 +47,14 @@ const inspectDeskEl = document.querySelector('#InspDesk')
 // scene 5
 const continueToScene5Btn = document.querySelector('#final-review')
 const lastScene = document.querySelector('#scene5-page')
-// const accuseMohammedEl =document.querySelector('#accuseMohammed')
-// const accuseYousefEl =document.querySelector('#accuseYousef')
-// const moreEvidenceEl =document.querySelector('#moreEvidence')
-
+const accuseMohammedEl = document.querySelector('#accuseMohammed')
+const accuseYousefEl = document.querySelector('#accuseYousef')
+const moreEvidenceEl = document.querySelector('#moreEvidence')
+const accusationEl = document.querySelector('#theAccusation')
+const accusationScene = document.querySelector('#accusation')
+const accusationImageEl = document.querySelector('#finalAccusationImage')
+const backToHomeEl = document.querySelector('#backToHome')
+const falseAccusationEl = document.querySelector('#falseAccusationImage')
 
 // testing the cache 
 console.log(landingPageEl)
@@ -144,6 +149,37 @@ function showLastScene(){
     fourthscene.style.display = 'none'
     lastScene.style.display = 'flex'
 }
+
+function finalAccusation(event){
+    if(event.target === accuseMohammedEl){
+        message = "Detective Abdulla confronts Mohammed with what he discovered. Mohammed's story begins to fall apart, and he eventually admits his responsibility for Hassan's death."
+        accusationImageEl.setAttribute('src','./Assets/images/absolute-cinema.png')
+        accusationEl.textContent = message
+        lastScene.style.display = 'none'
+        accusationScene.style.display = 'flex'
+    }else if(event.target === accuseYousefEl){
+        message = "Detective Abdulla accuses Yousef. Although Yousef had a motive, the conclusion was wrong. The investigation collapses while the real killer remains free."
+         falseAccusationEl.setAttribute('src','./Assets/images/false-accusation.png')
+        accusationEl.textContent = message
+        lastScene.style.display = 'none'
+        accusationScene.style.display = 'flex'
+    }else{
+        message= "Detective Abdulla delays making an accusation. With the investigation stalled, Mohammed takes the opportunity to disappear before the truth can be proven."
+         falseAccusationEl.setAttribute('src','./Assets/images/false-accusation.png')
+        accusationEl.textContent = message
+        lastScene.style.display = 'none'
+        accusationScene.style.display = 'flex'
+    }
+}
+
+function backToHomeBtn(){
+    message = null
+    accusationImageEl.setAttribute('src','')
+    falseAccusationEl.setAttribute('src','')
+     landingPageEl.style.display = ''
+     accusationScene.style.display = 'none'
+
+}
 /*----------------------------- Event Listeners -----------------------------*/
 startBtnEl.addEventListener('click',showBriefingPage)
 
@@ -177,3 +213,7 @@ inspectDeskEl.addEventListener('click',inspectDesk)
 
 // scene5 
 continueToScene5Btn.addEventListener('click',showLastScene)
+accuseMohammedEl.addEventListener('click',finalAccusation)
+accuseYousefEl.addEventListener('click',finalAccusation)
+moreEvidenceEl.addEventListener('click', finalAccusation)
+backToHomeEl.addEventListener('click',backToHomeBtn)
