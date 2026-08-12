@@ -43,6 +43,14 @@ const ObserveText4 = document.querySelector('#scene4-observation')
 const searchRoomEl = document.querySelector('#srchRoom')
 const inspectDeskEl = document.querySelector('#InspDesk')
 
+// scene 5
+const continueToScene5Btn = document.querySelector('#final-review')
+const lastScene = document.querySelector('#scene5-page')
+// const accuseMohammedEl =document.querySelector('#accuseMohammed')
+// const accuseYousefEl =document.querySelector('#accuseYousef')
+// const moreEvidenceEl =document.querySelector('#moreEvidence')
+
+
 // testing the cache 
 console.log(landingPageEl)
 console.log(briefingPageEl)
@@ -130,6 +138,12 @@ function searchRoom(){
 function inspectDesk(){
     ObserveText4.textContent = "You find a note written by Mohammed after an argument with his father. His anger toward Hassan is clear."
 }
+
+// scene 5
+function showLastScene(){
+    fourthscene.style.display = 'none'
+    lastScene.style.display = 'flex'
+}
 /*----------------------------- Event Listeners -----------------------------*/
 startBtnEl.addEventListener('click',showBriefingPage)
 
@@ -160,3 +174,6 @@ hassanNotesEl.addEventListener('click',hassanNotes)
 continueToScene4Btn.addEventListener('click',showScene4)
 searchRoomEl.addEventListener('click',searchRoom)
 inspectDeskEl.addEventListener('click',inspectDesk)
+
+// scene5 
+continueToScene5Btn.addEventListener('click',showLastScene)

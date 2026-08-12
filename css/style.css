@@ -230,7 +230,7 @@ button:hover {
     line-height: 1.7;
 }
 
-#scene2-text,#scene1-text,#scene3-text,#scene4-text,#scene5-text{
+#scene2-text,#scene1-text,#scene3-text,#scene4-text,#scene5-text,#whoMurderHasan{
     font-size: 20px;
  font-family: "Modern Antiqua", serif;
  margin-bottom: 15px;
@@ -241,4 +241,12 @@ button:hover {
 
 .btn{
     height:100px
+}
+
+#whoMurderHasan{
+    border: 3px dashed white;
+    width: 500px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 200px;
 }
