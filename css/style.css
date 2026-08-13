@@ -63,7 +63,7 @@ button {
     letter-spacing: 3px;
     cursor: pointer;
     transition: 0.3s;
-    
+
 }
 
 button:hover {
@@ -74,7 +74,7 @@ button:hover {
 .case-file {
     margin: 30px auto;
     color: white;
-     font-family: "Modern Antiqua", serif;
+    font-family: "Modern Antiqua", serif;
     letter-spacing: 2px;
     font-weight: 700;
 }
@@ -105,7 +105,7 @@ button:hover {
     letter-spacing: 3px;
 }
 
-#briefing-page{
+#briefing-page {
     display: none;
     min-height: 100vh;
     width: 100%;
@@ -117,22 +117,22 @@ button:hover {
 
 }
 
-.briefing-container{
+.briefing-container {
     width: min(700px, 90%);
     padding: 40px;
-    background: rgba(0,0, 0, 0.75);
+    background: rgba(0, 0, 0, 0.75);
     border: 1px solid white;
     border-radius: 8px;
     position: relative;
 }
 
-.briefing-container h1{
-    font-size: 45px ;
+.briefing-container h1 {
+    font-size: 45px;
     letter-spacing: 10px;
     margin-bottom: 30px;
 }
 
-.briefing-case-file{
+.briefing-case-file {
     margin-bottom: 30px;
     padding: 20px;
     font-family: "Modern Antiqua", serif;
@@ -140,28 +140,28 @@ button:hover {
     border-bottom: 1px solid white;
 }
 
-.briefing-case-file h2{
+.briefing-case-file h2 {
     color: white;
     margin-bottom: 5px;
 }
 
-.briefing-case-file h3{
+.briefing-case-file h3 {
     margin-bottom: 20px;
 }
 
-.briefing-case-file span{
+.briefing-case-file span {
     color: white;
     font-weight: 700;
 }
 
-.briefing-text{
+.briefing-text {
     max-width: 600px;
     margin: 0 auto 20px;
     font-size: 18px;
     color: white;
 }
 
-#back-btn{
+#back-btn {
     position: absolute;
     top: 25px;
     left: 25px;
@@ -171,10 +171,16 @@ button:hover {
 }
 
 
-#begin-investigation-btn{
+#begin-investigation-btn {
     margin-top: 20px;
 }
-#scene1-page, #scene2-page , #scene3-page, #scene4-page, #scene5-page,#accusation{
+
+#scene1-page,
+#scene2-page,
+#scene3-page,
+#scene4-page,
+#scene5-page,
+#accusation {
     display: none;
     min-height: 100vh;
     width: 100%;
@@ -191,8 +197,12 @@ button:hover {
     margin: 0 auto;
 }
 
-#scene1-image, #scene2-image,#scene3-image,#scene4-image,
-#scene5-image,#falseAccusationImage {
+#scene1-image,
+#scene2-image,
+#scene3-image,
+#scene4-image,
+#scene5-image,
+#falseAccusationImage {
     width: 100%;
     max-width: 700px;
     max-height: 40vh;
@@ -230,32 +240,35 @@ button:hover {
     line-height: 1.7;
 }
 
-#scene2-text,#scene1-text,#scene3-text,#scene4-text,#scene5-text,#whoMurderHasan{
-    font-size: 20px;
- font-family: "Modern Antiqua", serif;
- margin-bottom: 15px;
+#scene2-text,
+#scene1-text,
+#scene3-text,
+#scene4-text,
+#scene5-text,
+#whoMurderHasan {
+    font-family: "Modern Antiqua", serif;
+    margin-bottom: 15px;
     font-size: 18px;
     line-height: 1.7;
 }
 
 
-.btn{
-    height:100px
+.btn {
+    height: 100px
 }
 
-#whoMurderHasan{
-    border: 3px dashed white;
-    width: 500px;
-    justify-content: center;
-    align-items: center;
-    margin-left: 200px;
+#whoMurderHasan {
+      border: 3px dashed white;
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 15px;
 }
 
-#backToHome{
+#backToHome {
     border: 1px solid white;
 }
 
-#accusation-box{
+#accusation-box {
     max-width: 700px;
     margin: 30px auto;
     padding: 20px;
@@ -263,4 +276,3 @@ button:hover {
     border: 2px dashed rgba(255, 255, 255, 0.3);
     border-radius: 8px;
 }
-
