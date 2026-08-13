@@ -1,19 +1,49 @@
 # The Pearl Murder
 
 ## Description
-The Pearl Murder is a browser-based "Choose Your Own Adventure" detective game built with HTML, CSS, and JavaScript. Players investigate the murder of a wealthy pearl merchant by exploring different locations, questioning suspects, collecting clues, and making choices that lead to multiple possible endings.
+The Pearl Murder is a browser-based "Choose Your Own Adventure" detective game built using HTML, CSS, and JavaScript.
+
+The player takes the role of Detective Abdulla, who is assigned to investigate the murder of Hassan, a respected pearl merchant and owner of Pearl House.
+
+Throughout the investigation, the player explores different locations, questions people connected to the case, examines suspicious information, and eventually decides who murdered Hassan.
+
+The game contains 5 investigation scenes and 3 possible endings based on the player's final decision.
 
 ## Functionality Used
 1. HTML
 2. CSS
 3. JavaScript
 
+## Game Features
+1. Interactive detective story
+2. Five investigation scenes
+3. Character questioning and room investigation
+4. Observation system that displays information based on player actions
+5. How to Play menu
+6. Final suspect selection
+7. Three different endings
+8. Restart option after reaching an ending
+
 ## User Stories
-1. As a player, I want to choose different actions so that I can shape the story and investigation.
-2. As a player, I want to question suspects and search locations so that I can collect clues.
-3. As a player, I want my choices to affect the outcome so that each playthrough can have a different ending.
-4. As a player, I want to view the clues I have collected so that I can decide who the murderer is.
-5. As a player, I want to restart the game after finishing so that I can explore different choices and endings.
+1. As a player, I want to investigate different locations so that I can learn more about the murder.
+2. As a player, I want to interact with objects and question characters so that I can discover important information.
+3. As a player, I want to review information about the suspects so that I can decide who murdered Hassan.
+4. As a player, I want my final decision to determine the outcome of the investigation.
+5. As a player, I want to restart the game after reaching an ending so that I can try a different decision.
+
+## Game Scenes
+1. Hassan's Office: Investigate the crime scene.
+2. Main Hall: Question Fatima about Hassan, Mohammed, and Yousef.
+3. Business Study: Investigate Hassan's business relationship with Yousef.
+4. Mohammed's Room: Investigate Mohammed and his relationship with his father.
+5. Final Evidence Review: Review the case and make your final accusation.
+
+## Possible Endings
+The game contains three possible endpoints:
+
+1. True Justice: the correcct murderer is accused.
+2. Wrong Accusation: An innocent suspect is accused.
+3. killer Escapes: The player decides that more evidence is needed.
 
 ## Screenshots
 ![Landing Page](./readme-images/The-Pearl-Murder.png)
