@@ -276,3 +276,37 @@ button:hover {
     border: 2px dashed rgba(255, 255, 255, 0.3);
     border-radius: 8px;
 }
+
+#howto-play{
+    display: none;
+    position: fixed;
+
+    width: 100%;
+    min-height: 100vh;
+
+    justify-content: center;
+    align-items: center;
+    background: black;
+}
+
+.howto-box{
+    width: 500px;
+    padding: 40px;
+    text-align: center;
+    background: black;
+    border: 2px dashed white;
+    border-radius: 8px;
+}
+
+.howto-box h2{
+    margin-bottom: 25px;
+    letter-spacing: 5px;
+}
+
+.howto-box p{
+    margin-bottom: 15px;
+}
+
+#close-howto-btn {
+    margin-top: 20px;
+}
