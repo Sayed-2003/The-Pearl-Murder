@@ -50,11 +50,19 @@ const lastScene = document.querySelector('#scene5-page')
 const accuseMohammedEl = document.querySelector('#accuseMohammed')
 const accuseYousefEl = document.querySelector('#accuseYousef')
 const moreEvidenceEl = document.querySelector('#moreEvidence')
+
+// accusation Result
 const accusationEl = document.querySelector('#theAccusation')
 const accusationScene = document.querySelector('#accusation')
 const accusationImageEl = document.querySelector('#finalAccusationImage')
 const backToHomeEl = document.querySelector('#backToHome')
 const falseAccusationEl = document.querySelector('#falseAccusationImage')
+
+
+// how to play button
+const howToBtnEl = document.querySelector('#howTo-btn')
+const howToPlayEl = document.querySelector('#howto-play')
+const closeHowToPlayEl = document.querySelector('#close-howto-btn')
 
 // testing the cache 
 console.log(landingPageEl)
@@ -67,13 +75,21 @@ console.log(firstScene)
 
 console.log(continueToScene3Btn)
 console.log(thirdscene)
+
+console.log(howToBtnEl)
+console.log(howToPlayEl)
+console.log(closeHowToPlayEl)
 /*-------------------------------- Functions --------------------------------*/
 function showBriefingPage() {
+    console.log('In Briefing page')
+
     landingPageEl.style.display = 'none'
     briefingPageEl.style.display = 'flex'
 }
 
 function showLandingPage() {
+    console.log('In Landing page')
+
     briefingPageEl.style.display = 'none'
     landingPageEl.style.display = ''
 }
@@ -81,6 +97,7 @@ function showLandingPage() {
 // scene 1
 function showScene1() {
     console.log('in scene 1')
+
     briefingPageEl.style.display = 'none'
     firstScene.style.display = 'flex'
 }
@@ -97,6 +114,7 @@ function examineDesk() {
 // scene 2
 function showScene2() {
     console.log('in scene 2')
+
     firstScene.style.display = 'none'
     seconedScene.style.display = 'flex'
 }
@@ -132,6 +150,8 @@ function hassanNotes() {
 // scene 4
 
 function showScene4() {
+    console.log('in scene 4')
+
     thirdscene.style.display = 'none'
     fourthscene.style.display = 'flex'
 }
@@ -146,11 +166,16 @@ function inspectDesk() {
 
 // scene 5
 function showLastScene() {
+    console.log('final scene')
+
     fourthscene.style.display = 'none'
     lastScene.style.display = 'flex'
 }
 
+// final accustion result
 function finalAccusation(event) {
+    console.log('final accusation')
+
     if (event.target === accuseMohammedEl) {
         message = "Detective Abdulla confronts Mohammed with what he discovered. Mohammed's story begins to fall apart, and he eventually admits his responsibility for Hassan's death."
         accusationImageEl.setAttribute('src', './Assets/images/absolute-cinema.png')
@@ -172,6 +197,7 @@ function finalAccusation(event) {
     }
 }
 
+// back to home button
 function backToHomeBtn() {
     message = null
     accusationImageEl.setAttribute('src', '')
@@ -179,6 +205,15 @@ function backToHomeBtn() {
     landingPageEl.style.display = ''
     accusationScene.style.display = 'none'
 
+}
+
+// how to play button
+function showHowToPlay(){
+    howToPlayEl.style.display = 'flex'
+}
+
+function closeHowToPlay(){
+    howToPlayEl.style.display = 'none'
 }
 /*----------------------------- Event Listeners -----------------------------*/
 startBtnEl.addEventListener('click', showBriefingPage)
@@ -216,4 +251,11 @@ continueToScene5Btn.addEventListener('click', showLastScene)
 accuseMohammedEl.addEventListener('click', finalAccusation)
 accuseYousefEl.addEventListener('click', finalAccusation)
 moreEvidenceEl.addEventListener('click', finalAccusation)
+
+// back to home button 
 backToHomeEl.addEventListener('click', backToHomeBtn)
+
+// how to play button
+howToBtnEl.addEventListener('click', showHowToPlay)
+
+closeHowToPlayEl.addEventListener('click', closeHowToPlay)
