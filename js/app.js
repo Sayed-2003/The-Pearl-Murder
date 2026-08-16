@@ -54,7 +54,7 @@ const moreEvidenceEl = document.querySelector('#moreEvidence')
 // accusation Result
 const accusationEl = document.querySelector('#theAccusation')
 const accusationScene = document.querySelector('#accusation')
-const accusationImageEl = document.querySelector('#finalAccusationImage')
+const trueAccusationImageEl = document.querySelector('#trueAccusationImage')
 const backToHomeEl = document.querySelector('#backToHome')
 const falseAccusationEl = document.querySelector('#falseAccusationImage')
 
@@ -178,7 +178,7 @@ function finalAccusation(event) {
 
     if (event.target === accuseMohammedEl) {
         message = "Detective Abdulla confronts Mohammed with what he discovered. Mohammed's story begins to fall apart, and he eventually admits his responsibility for Hassan's death."
-        accusationImageEl.setAttribute('src', './Assets/images/absolute-cinema.png')
+        trueAccusationImageEl.setAttribute('src', './Assets/images/absolute-cinema.png')
         accusationEl.textContent = message
         lastScene.style.display = 'none'
         accusationScene.style.display = 'flex'
@@ -200,7 +200,7 @@ function finalAccusation(event) {
 // back to home button
 function backToHomeBtn() {
     message = null
-    accusationImageEl.setAttribute('src', '')
+    trueAccusationImageEl.setAttribute('src', '')
     falseAccusationEl.setAttribute('src', '')
     landingPageEl.style.display = ''
     accusationScene.style.display = 'none'

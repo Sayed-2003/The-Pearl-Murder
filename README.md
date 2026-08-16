@@ -31,6 +31,12 @@ The game contains 5 investigation scenes and 3 possible endings based on the pla
 4. As a player, I want my final decision to determine the outcome of the investigation.
 5. As a player, I want to restart the game after reaching an ending so that I can try a different decision.
 
+## How To Play
+1. Read each scene carefully.
+2. Use the buttons to investigate the story.
+3. Your choices can lead to different endings.
+4. Accuse the correct suspect to solve the case.
+
 ## Game Scenes
 1. Hassan's Office: Investigate the crime scene.
 2. Main Hall: Question Fatima about Hassan, Mohammed, and Yousef.
