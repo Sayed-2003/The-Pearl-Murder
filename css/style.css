@@ -258,7 +258,7 @@ button:hover {
 }
 
 #whoMurderHasan {
-      border: 3px dashed white;
+    border: 3px dashed white;
     max-width: 500px;
     margin: 20px auto;
     padding: 15px;
@@ -277,7 +277,7 @@ button:hover {
     border-radius: 8px;
 }
 
-#howto-play{
+#howto-play {
     display: none;
     position: fixed;
     width: 100%;
@@ -287,7 +287,7 @@ button:hover {
     background: black;
 }
 
-.howto-box{
+.howto-box {
     width: 500px;
     padding: 40px;
     text-align: center;
@@ -296,12 +296,12 @@ button:hover {
     border-radius: 8px;
 }
 
-.howto-box h2{
+.howto-box h2 {
     margin-bottom: 25px;
     letter-spacing: 5px;
 }
 
-.howto-box p{
+.howto-box p {
     margin-bottom: 15px;
 }
 

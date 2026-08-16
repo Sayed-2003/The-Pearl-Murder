@@ -208,11 +208,11 @@ function backToHomeBtn() {
 }
 
 // how to play button
-function showHowToPlay(){
+function showHowToPlay() {
     howToPlayEl.style.display = 'flex'
 }
 
-function closeHowToPlay(){
+function closeHowToPlay() {
     howToPlayEl.style.display = 'none'
 }
 /*----------------------------- Event Listeners -----------------------------*/
