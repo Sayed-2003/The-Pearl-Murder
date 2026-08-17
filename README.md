@@ -52,9 +52,26 @@ The game contains three possible endpoints:
 3. killer Escapes: The player decides that more evidence is needed.
 
 ## Screenshots
+
+### Main Page
 ![Landing Page](./readme-images/The-Pearl-Murder.png)
+
+### Hassan office scene
 ![Hassan office](./readme-images/hassan-office.png)
+
+### Main Hall scene
 ![Main-Hall](./readme-images/main-hall.png)
-![Busiess study](./readme-images/Business-study.png)
+
+### Business Study scene
+![Business study](./readme-images/Business-study.png)
+
+### Mohammed Room scene
 ![Mohammed Room](./readme-images/mohammed-room.png)
+
+### Final Accusation scene
 ![Final accusation](./readme-images/Finalaccusation.png)
+
+## Future Enhancements
+1. Add box on collecting clues 
+2. make more scenes
+3. make a trigger to trigger a secret scene in the game
